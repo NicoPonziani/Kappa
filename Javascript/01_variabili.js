@@ -92,6 +92,15 @@ console.log(PI); //<-- 3.14
 PI = 3.14159; //<-- Quando eseguiremo questo codice riceveremo un errore! Non possiamo modificare il valore di una costante
 
 /**
+ * Ricordati che javascript è un linguaggio di programmazione imperativo, quindi il codice viene eseguito in sequenza.
+ * Questo significa che le istruzioni vengono eseguite nell'ordine in cui sono scritte.
+ * Quindi se proviamo ad accedere ad una variabile prima di dichiararla, otterremo un errore.
+ */
+//Esempio:
+console.log(variabileNonDichiarata); //<-- Errore! variabileNonDichiarata is not defined
+let variabileNonDichiarata = "Ciao Mondo!"; //<-- dichiarazione e assegnamento di un valore alla variabile variabileNonDichiarata
+
+/**
  * Per riassumere:
  * -LET: per dichiarare una variabile
  * -CONST: per dichiarare una costante
