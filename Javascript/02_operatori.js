@@ -1,10 +1,19 @@
 /**
+ * Per cercare direttamente la parte che ti interessa puoi cercare il titolo con ctrl + f.
+ * I titoli sono scritti in questo modo:
+ * OPERATORI ARITMETICI
+ * OPERATORI DI ASSEGNAMENTO
+ * OPERATORI DI CONFRONTO
+ * OPERATORI LOGICI
+ * OPERATORI DI TIPO
+ *
+ *
  * OPERATORI
  *
  * Gli operatori sono simboli che permettono di eseguire operazioni su variabili e valori.
  * Abbiamo diversi tipi di operatori:
  * -aritmetici: +, -, *, /, %, ++, --
- * -di assegnazione: =, +=, -=, *=, /=, %=
+ * -di assegnamento: =, +=, -=, *=, /=, %=
  * -di confronto: ==, ===, !=, !==, >, <, >=, <=
  * -logici: &&, ||, !
  * -di tipo: typeof
@@ -95,9 +104,9 @@ console.log(e); //<-- 6 successivamente quindi il valore di 'e' è 6
  * Quindi ricordati che utilizzare uno di quei due operatori è equivalente a sovrascriverne il valore con quest'ultimo incrementato o decrementato di 1.
  */
 
-/** OPERATORI DI ASSEGNAZIONE
- * Gli operatori di assegnazione vengono utilizzati per assegnare un valore ad una variabile.4
- * Oltre all'operatore di assegnazione =, abbiamo anche operatori di assegnazione combinati con operatori aritmetici.
+/** OPERATORI DI ASSEGNAMENTO
+ * Gli operatori di assegnamento vengono utilizzati per assegnare un valore ad una variabile.4
+ * Oltre all'operatore di assegnamento =, abbiamo anche operatori di assegnamento combinati con operatori aritmetici.
  * Questi operatori combinati eseguono un'operazione aritmetica e assegnano il risultato alla variabile allo stesso momento.
  */
 //Esempio:
