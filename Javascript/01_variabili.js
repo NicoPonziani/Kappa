@@ -55,7 +55,7 @@ console.log(eta); //<-- 32
 /**
  * Di seguito una serie di esempi di dichiarazione e assegnamento di variabili con valori di diversi tipi.
  */
-let nome = "Kappa"; //<-- string
+let nome = "Kappa"; //<-- string (testo) **ricordati che le stringhe vanno racchiuse tra apici singoli '' o doppi "" **
 let anno = 1992; //<-- number
 let isSquirrel = true; //<-- boolean
 let array = [1, 2, 3]; //<-- array
