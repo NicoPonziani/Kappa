@@ -6,8 +6,8 @@
 let string = "parola";
 let number = 2;
 let boolean = true;
-let array = [1, 2, 3, k];
-let object = { numero: 1, gatto: Jerry, pianta: cactus };
+let array = [1, 2, 3, k]; // ERRORE!! k è una variabile non definita in questo modo, le stringhe si fanno con gli apici
+let object = { numero: 1, gatto: Jerry, pianta: cactus }; //ERRORE!! Stesso errore di prima con Jerry e cactus, in questo modo sono variabili non definite
 let zero = null;
 let indefinito = undefined;
 
@@ -19,7 +19,7 @@ let indefinito = undefined;
  */
 
 let ragazza;
-ragazza = k;
+ragazza = k; //ERRORE!! k è una variabile non definita, le stringhe si fanno con gli apici
 console.log(ragazza);
 ragazza = 23;
 console.log(ragazza);

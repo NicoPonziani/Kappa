@@ -5,6 +5,8 @@
  */
 let eta = 33;
 
+//CANCELLAMI E SCRIVI IL CODICE SOTTO
+
 /**
  * Esercizio 2
  * Dichiara una variabile in cui dichiari la tua età, un'altra variabile in cui dichiari l'età della tua dolce metà
@@ -14,9 +16,18 @@ let eta = 33;
  * senno stampa in console "Chiama Taffo"
  */
 
+//CANCELLAMI E SCRIVI IL CODICE SOTTO
+
 /**
  * Esercizio 3
  * Dichiara una variabile con il tuo nome come valore
  * se la variabile è uguale a "Kappa" oppure uguale a "Nick" stampala in console
  * altrimenti non fare nulla
+ */
+
+//CANCELLAMI E SCRIVI IL CODICE SOTTO
+
+/**
+ * Esercizio 4
+ *
  */

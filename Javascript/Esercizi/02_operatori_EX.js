@@ -19,7 +19,8 @@ number++;
  * Somma la variabile numerica di prima a 9 e salva il risultato in una nuova variabile.
  * Stampa entrambe le variabili.
  */
-let newVar = (number += 9);
+let newVar = (number += 9); //ERRORE!!! le parentesi tonde non servono, += non è l'operatore di somma, bensi è l'operatore di SOMMA e ASSEGNAZIONE
+//In questo modo tu non solo hai fatto la somma tra 'number' e 9 ma hai anche assegnato quel valore a 'number'
 console.log(number);
 console.log(newVar);
 
@@ -29,7 +30,9 @@ console.log(newVar);
  * Infine stampala.
  */
 
-newVar = newVar /= 5;
+newVar = newVar /= 5; // ERRORE!!! Qui potevi usare solamente l'espressione /= , non serve assegnarlo
+// '/=' questo operatore esegue la divisione ed allo stesso tempo assegna il risultato
+//l'equivalente è newVar = newVar / 5;
 console.log(newVar);
 
 /**
@@ -38,7 +41,8 @@ console.log(newVar);
  * Stampa il risultato senza assegnare il valore ad una variabile.
  */
 
-console.log(string + " " + "pinguino");
+console.log(string + " " + "pinguino"); // WARNING!! non c'è bisogno di concatenare separatamente " " e "pinguino", dal momento che sono due stringhe scrivile insieme
+//console.log(string + " pinguino");
 
 /**
  * Esercizio 6
