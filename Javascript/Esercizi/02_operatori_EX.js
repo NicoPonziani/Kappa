@@ -4,22 +4,24 @@
  * Dichiara ed inizializza una variabile di tipo stringa con valore "Ciao Mondo!".
  */
 
-//CANCELLAMI E SCRIVI IL CODICE SOTTO
+let number = 10;
+let string = "Ciao Mondo!";
 
 /**
  * Esercizio 2
  * Usa la variabile numerica di prima ed aggiungi 1 usando l'operatore di incremento
  */
 
-//CANCELLAMI E SCRIVI IL CODICE SOTTO
+number++;
 
 /**
  * Esercizio 3
  * Somma la variabile numerica di prima a 9 e salva il risultato in una nuova variabile.
  * Stampa entrambe le variabili.
  */
-
-//CANCELLAMI E SCRIVI IL CODICE SOTTO
+let newVar = (number += 9);
+console.log(number);
+console.log(newVar);
 
 /**
  * Esercizio 4
@@ -27,7 +29,8 @@
  * Infine stampala.
  */
 
-//CANCELLAMI E SCRIVI IL CODICE SOTTO
+newVar = newVar /= 5;
+console.log(newVar);
 
 /**
  * Esercizio 5
@@ -35,16 +38,16 @@
  * Stampa il risultato senza assegnare il valore ad una variabile.
  */
 
-//CANCELLAMI E SCRIVI IL CODICE SOTTO
+console.log(string + " " + "pinguino");
 
 /**
  * Esercizio 6
  * Concatena alla variabile sotto dichiarata la variabile numerica del primo esercizio
- * e stampa il risultato.
+ * e stampa il risultato
  */
 
 let stringa = "Il numero è: ";
-//CANCELLAMI E SCRIVI IL CODICE SOTTO
+console.log(stringa + number);
 
 /**
  * Esercizio 7
@@ -52,7 +55,7 @@ let stringa = "Il numero è: ";
  */
 let nome = "Kappa";
 let cognome = "Ti";
-//CANCELLAMI E SCRIVI IL CODICE SOTTO
+console.log(nome !== cognome);
 
 /**
  * Esercizio 8
@@ -60,7 +63,7 @@ let cognome = "Ti";
  */
 let numero = 10;
 let numero2 = "10";
-//CANCELLAMI E SCRIVI IL CODICE SOTTO
+console.log(numero == numero2);
 
 /**
  * Esercizio 9
@@ -72,7 +75,10 @@ let numero2 = "10";
  */
 let k = 10;
 let n = 10;
-//CANCELLAMI E SCRIVI IL CODICE SOTTO
+k--;
+n++;
+f = k <= n;
+console.log(f);
 
 /**
  * Esercizio 10
@@ -85,3 +91,5 @@ let n = 10;
  * -il confronto di maggiore o uguale
  * -il confronto di minore o uguale
  */
+
+console.log(k + n, k - n, k % n, k === n, k !== n, k >= n, k <= n);

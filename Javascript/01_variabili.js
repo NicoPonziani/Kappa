@@ -24,7 +24,7 @@ console.log(nomeVariabile); //<-- undefined
 
 /*
  * Il nome della variabile è un identificatore e può essere composto da lettere, numeri, underscore e dollaro. Non può iniziare con un numero.
- * Anche se il nome lo scegliamo noi, i solito il nome delle variabili dovrebbe dare un'idea di cosa rappresenta quel valore.
+ * Anche se il nome lo scegliamo noi, di solito il nome delle variabili dovrebbe dare un'idea di cosa rappresenta quel valore.
  */
 //Esempio:
 let cognome; //<-- il nome della variabile ci fa capire già che si tratta di un cognome e che molto probabilmente conterrà una stringa.

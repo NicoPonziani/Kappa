@@ -75,6 +75,12 @@ console.log(b); //<-- 5
 /**
  * Abbiamo anche gli operatori di incremento (++) e decremento (--).
  * Questi operatori incrementano o decrementano il valore di una variabile di 1.
+ *
+ * Gli operatori di incremento e decremento sono delle scorciatoie per scrivere:
+ * variabile = variabile + 1; per l'incremento   <-- '++'
+ * variabile = variabile - 1; per il decremento  <-- '--'
+ *
+ * Quindi ricordati che utilizzare uno di quei due operatori è equivalente a sovrascriverne il valore con quest'ultimo incrementato o decrementato di 1.
  */
 //Esempio:
 let c = 10;
@@ -96,13 +102,6 @@ console.log(d); //<-- 6, il valore di 'd' è 6
 let e = 5;
 console.log(e++); //<-- 5, prima esegue il console.log e poi incrementa di 1
 console.log(e); //<-- 6 successivamente quindi il valore di 'e' è 6
-/**
- * Gli operatori di incremento e decremento sono delle scorciatoie per scrivere:
- * variabile = variabile + 1; per l'incremento   <-- '++'
- * variabile = variabile - 1; per il decremento  <-- '--'
- *
- * Quindi ricordati che utilizzare uno di quei due operatori è equivalente a sovrascriverne il valore con quest'ultimo incrementato o decrementato di 1.
- */
 
 /** OPERATORI DI ASSEGNAMENTO
  * Gli operatori di assegnamento vengono utilizzati per assegnare un valore ad una variabile.4
@@ -223,7 +222,7 @@ console.log(!condizione); //<-- false, il valore opposto di true è false, infat
  */
 
 /**
- * Ricorda che possiamo ,tramite gli operatori LOGICI, possiamo concatenare un numero illimitato di operatori di CONFRONTO.
+ * Ricorda che possiamo, tramite gli operatori LOGICI, concatenare un numero illimitato di operatori di CONFRONTO.
  */
 //Esempio:
 let eta = 32;

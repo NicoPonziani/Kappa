@@ -3,8 +3,13 @@
  * Dichiara ed inizializza una variabile per ogni tipologia di dato che abbiamo in javascript
  * (string, number, boolean, array, object, null, undefined)
  */
-
-// CANCELLAMI E RISCRIVI IL CODICE QUI SOTTO
+let string = "parola";
+let number = 2;
+let boolean = true;
+let array = [1, 2, 3, k];
+let object = { numero: 1, gatto: Jerry, pianta: cactus };
+let zero = null;
+let indefinito = undefined;
 
 /**
  * Esercizio 2
@@ -13,11 +18,15 @@
  * Poi assegna a quella stessa variabile un valore di tipo number e stampala in console.
  */
 
-// CANCELLAMI E RISCRIVI IL CODICE QUI SOTTO
+let ragazza;
+ragazza = k;
+console.log(ragazza);
+ragazza = 23;
+console.log(ragazza);
 
 /**
  * Esercizio 3
  * Dichiara ed inizializza una costante;
  */
 
-// CANCELLAMI E RISCRIVI IL CODICE QUI SOTTO
+const k = 23;
