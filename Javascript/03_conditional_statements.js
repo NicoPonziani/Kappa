@@ -119,6 +119,49 @@ if (numero > 10) {
  */
 
 /**
+ * RICORDA come condizione puoi usare qualsiasi espressione che ritorni un valore BOOLEAN
+ * nella lezione precedente abbiamo visto anche gli operatori logici che nella maggior parte dei casi vengono inseriti proprio nelle condizioni
+ *
+ * Facciamo qualche esempio per capire come e perchè utilizzare gli operatori logici
+ */
+//Esempio
+let nomeEsempio = "Nick";
+if (nomeEsempio === "Nick") {
+  console.log(nomeEsempio);
+} else if (nomeEsempio === "Kappa") {
+  console.log(nomeEsempio);
+}
+//Abbiamo eseguito 2 controlli per stampare il nome solo in determinate occasioni
+//Non ti sembra però che ci sia qualcosa di strano? il blocco di codice da eseguire è IDENTICO
+//Per evitare codice duplicato possiamo utilizzare gli operatori logici
+if (nomeEsempio === "Nick" || nomeEsempio === "Kappa") {
+  console.log(nomeEsempio);
+}
+//Abbiamo riscritto la stessa identica cosa, ma abbiamo accorpato la condizione del'IF e dell'IF-ELSE insieme tramite l'operatore logico OR
+//Vediamo un altro esempio:
+let nick = "Nick";
+let nickEta = 32;
+if (nick === "Nick") {
+  if (nickEta === 32) {
+    console.log(`Nome: ${nick} Età:${nickEta}`);
+  }
+}
+//Vediamo qui che succede, il nostro intento è stampare la variabile 'nick' solo in determinate condizioni
+//In questo caso abbiamo un IF dentro un altro IF
+//ricorda che dentro un blocco di codice possiamo scrivere cio che vogliamo , compresi altri conditional statements
+//Nel nostro caso dopo aver controllato se il nome è "Nick" entriamo nel blocco di codice del primo IF
+//Nel nostro blocco di codice abbiamo però un altro controllo , ovvero il controllo dell'eta
+//La cosa strana però è che non ci sono altri controlli da fare o azioni da eseguire, quindi potremmo tranquillamente accorpare le due cose
+if (nick === "Nick" && nickEta === 32) {
+  console.log(`Nome: ${nick} Età:${nickEta}`);
+}
+
+/**
+ * Questi sono solo due esempi, ma a seconda dei casi ricordati sempre di valutare se utilizzare piu blocchi condizionali oppure
+ * gli operatori logici
+ */
+
+/**
  * SWITCH
  * Lo stato condizionale SWITCH viene utilizzato per eseguire un blocco di codice diverso per ogni possibile valore di una variabile.
  * La struttura di un blocco SWITCH è la seguente:
