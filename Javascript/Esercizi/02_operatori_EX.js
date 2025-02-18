@@ -4,24 +4,16 @@
  * Dichiara ed inizializza una variabile di tipo stringa con valore "Ciao Mondo!".
  */
 
-let number = 10;
-let string = "Ciao Mondo!";
-
 /**
  * Esercizio 2
  * Usa la variabile numerica di prima ed aggiungi 1 usando l'operatore di incremento
  */
-
-number++;
 
 /**
  * Esercizio 3
  * Somma la variabile numerica di prima a 9 e salva il risultato in una nuova variabile.
  * Stampa entrambe le variabili.
  */
-let newVar = number + 9;
-console.log(number);
-console.log(newVar);
 
 /**
  * Esercizio 4
@@ -29,16 +21,11 @@ console.log(newVar);
  * Infine stampala.
  */
 
-newVar = newVar / 5;
-console.log(newVar);
-
 /**
  * Esercizio 5
  * Concatena tramite l'operatore + la variabile stringa del primo esercizio con la stringa " Pinguino".
  * Stampa il risultato senza assegnare il valore ad una variabile.
  */
-
-console.log(string + " pinguino");
 
 /**
  * Esercizio 6
@@ -47,7 +34,6 @@ console.log(string + " pinguino");
  */
 
 let stringa = "Il numero è: ";
-console.log(stringa + number);
 
 /**
  * Esercizio 7
@@ -55,7 +41,6 @@ console.log(stringa + number);
  */
 let nome = "Kappa";
 let cognome = "Ti";
-console.log(nome !== cognome);
 
 /**
  * Esercizio 8
@@ -63,7 +48,6 @@ console.log(nome !== cognome);
  */
 let numero = 10;
 let numero2 = "10";
-console.log(numero == numero2);
 
 /**
  * Esercizio 9
@@ -75,10 +59,6 @@ console.log(numero == numero2);
  */
 let k = 10;
 let n = 10;
-k--;
-n++;
-f = k <= n;
-console.log(f);
 
 /**
  * Esercizio 10
@@ -91,5 +71,3 @@ console.log(f);
  * -il confronto di maggiore o uguale
  * -il confronto di minore o uguale
  */
-
-console.log(k + n, k - n, k % n, k === n, k !== n, k >= n, k <= n);
