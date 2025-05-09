@@ -123,3 +123,6 @@ let nomePersona1 = persona1.nome;
 // Possiamo anche utilizzare il costruttore di "default" presente in ogni classe anche se non dichiarato
 const personaVuota = new Persona();
 console.log(personaVuota.nome); // Output: 'undefined' <-- se utilizziamo un costruttore di default le nostre proprietà avranno come valore 'undefined'
+
+// Se accediamo ad una proprietà che non esiste, l'applicazione non va in errore, ma quella proprietà sarà undefined
+console.log(persona1.annoDiNascita);
