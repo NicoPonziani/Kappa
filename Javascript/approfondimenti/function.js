@@ -171,3 +171,78 @@ let responseCallback = funcCallBack(["Stringa","TRINGA","RENGA","ReNnA"], (strin
 
 // console.log(`Il risultato di funcCallBack è: \n${responseCallback}`) //!!TOGLI IL COMMENTO!!//
 
+/*
+    Ricorda che una CALLBACK è semplicemente un parametro di una funzione a cui viene passato come valore un'altra funzione.
+
+    Non è importante che venga scritta direttamente una funzione anonima o una arrow function dentro le tonde.
+
+    Quello è solo un valore!!! Esattamente come lo è una stringa o un numero
+*/
+
+//Prendiamo questa funzione come esempio
+function example(stringa){
+    return stringa.toLowerCase();
+}
+//Una semplice funzione che accetta una stringa come parametro e restituisce la stessa stringa in minuscolo
+
+let responseStringEx = example("NICK"); // Possiamo passare direttamente un valore di tipo STRINGA come parametro
+
+let stringaParam = "NICK"; // ma possiamo anche avere una variabile che contiene una stringa...
+let responseStringEx2 = example(stringaParam); //...e passare quella variabile come parametro
+
+
+// console.log(`Valore passato direttamente: \n${responseStringEx} \n-----------------\n\nValore passato tramite variabile: \n${responseStringEx2}`) //!!TOGLI IL COMMENTO!!//
+/*
+    Il risultato NON cambia!!!
+
+    da una parte abbiamo passato il valore direttamente..
+
+    ..dall'altra gli abbiamo passato una variabile che contiene quel valore
+
+    Questo discorso puo essere applicato su tutti i tipi di valore, comprese le FUNZIONI
+*/
+
+//CALLBACK passata direttamente come valore
+funcCallBack(["STRINGA"], (stringa) => stringa.toLowerCase());
+
+//CALLBACK passata tramite una variabile
+let callbackParam = (stringa) => stringa.toLowerCase();
+funcCallBack(["STRINGA"], callbackParam);
+
+/*
+    Ricorda che anche le funzioni normali (quelle con il nome) sono delle "variabili".
+
+    Quindi possiamo passargli anche direttamente quelle
+*/
+
+//CALLBACK passata tramite funzione normale
+funcCallBack(["STRINGA"], example); //example è dichiarata a riga 183
+
+
+
+/*
+    RICAPITOLANDO :
+
+    LE FUNZIONI..
+    1. Sono porzioni di codice riutilizzabili, mirate a risolvere un determinato problema
+
+    2. Possono accettare dei parametri 
+
+    3. Possono restituire un valore (undefined se non c'è il return)
+
+    4. Sono dei valori (function fa parte delle tipologie di dato disponibili)
+
+    5. Possono essere assegnate a variabili (senza parentesi tonde) o eseguite (con parentesi tonde)
+
+    6. Ne abbiamo 3 tipi: normali(con nome), anonime, freccia
+
+    7. Le funzioni anonime e freccia, se non assegnate ad una variabile o eseguite, sono inutili (garbage collector)
+
+    8. Le funzioni passate come parametro ad un'altra funzione sono chiamate CALLBACK
+
+    9. Le CALLBACK sono parametri (quindi variabili) che contengono una funzioni, quindi puo essere eguita
+    
+    10. QUALUNQUE valore di tipo funzione puo essere assegnato ad una callback. Sia passato direttamente tra le tonde,
+    sia assegnato ad una variabile e poi passato, sia una funzione con il nome.
+
+*/
