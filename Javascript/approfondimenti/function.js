@@ -219,6 +219,50 @@ funcCallBack(["STRINGA"], callbackParam);
 funcCallBack(["STRINGA"], example); //example è dichiarata a riga 183
 
 
+//FUNZIONE OGGETTO
+
+function funcLikeObject(param){
+    funcLikeObject.count++ //Sto incrementando una variabile interna creata da me ogni volta che viene richiamata la funzione
+}
+
+/*
+    Prendiamo come esempio la funzione appena dichiarata.
+
+    Abbiamo detto che le funzioni, se non eseguite (quindi richiamate senza le parentesi tonde) sono dei valori. (function)
+
+    Il tipo di dato "function" in Javascript ha delle cose in comune con gli Object.
+
+    Come la possibilità di creare delle variabili intern.
+*/
+
+//// stiamo creando una variabile di tipo stringa dentro l'oggetto funzione.
+funcLikeObject.variabile = "Sono una variabile di tipo stringa appena creata"; 
+
+// console.log(funcLikeObject.variabile); //!!SCOMMENTAMI!!
+
+/*
+ questo ci permette di avere delle informazioni personalizzate sulle funzioni sempre a disposizione
+
+ come per esempio il numero di volte che sono state eseguite
+*/
+
+funcLikeObject.count = 0;
+
+funcLikeObject();
+funcLikeObject();
+funcLikeObject();
+
+// console.log(`La funzione funcLikeObject è stata richiamata: ${funcLikeObject.count}`); //!!SCOMMENTAMI!!
+
+/*
+    Le funzioni hanno anche una serie di property predefinite che ci permettono di conoscere alcune informazioni 
+
+    Facciamo qualche esempio:
+*/
+
+funcLikeObject.length; //Il numero dei parametri che accetta
+funcLikeObject.name;   //Il nome della funzione (funcLikeObject)
+funcLikeObject.arguments; //I valori passati come parametri (va richiamata DENTRO la funzione, sennò è sempre null)
 
 /*
     RICAPITOLANDO :
@@ -245,4 +289,6 @@ funcCallBack(["STRINGA"], example); //example è dichiarata a riga 183
     10. QUALUNQUE valore di tipo funzione puo essere assegnato ad una callback. Sia passato direttamente tra le tonde,
     sia assegnato ad una variabile e poi passato, sia una funzione con il nome.
 
+    11. Sono simili a degli oggetti, quindi possiamo creare delle proprietà personalizzate o accederne alcune preimpostate
+    che rivelano alcune informazioni riguardanti la stessa.
 */
